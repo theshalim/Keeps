@@ -1,0 +1,17 @@
+﻿@model Keeps.Models.Country
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-8">
+        <form asp-controller="Country" asp-action="Create" method="post">   
+            <div class="col-8">
+                
+                <input asp-for="Name" type="text" class="form-control for" id="Name" name="Name" placeholder="Country Name">
+                <br />
+                <input type="submit" value="Create" class="btn align-items-end btn-primary" style="float:right" />
+            </div>
+        </form>
+    </div>
+</div>
